@@ -1,10 +1,10 @@
 ## Introduction
 
-This Project uses data from
+This Project used data from
 the <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">Samsung Galaxy S smartphone</a>. 
 In this project, we have the following:
 
-* <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ">Samsung Galaxy S smartphone data</a>
+* <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">NewHARDataSet data</a>
 
 * <b>Description</b>: We should create one R script called run_analysis.R that does the following:
 
