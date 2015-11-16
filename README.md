@@ -6,7 +6,7 @@ Here is the source data sets of this project:
 <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">HAR Data</a>.
 
 We have prepared R script to produce new data set under the following consideration:
-* <b>New Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">NewHARDataSet data</a>
+* <b>New Dataset</b>: <a href="https://github.com/Talmagrami/GCDataCourse/blob/master/NewHARDataSet.txt">NewHARDataSet data</a>
 
 * <b>Actions</b>: R script which I made called run_analysis.R that does the following:
 
