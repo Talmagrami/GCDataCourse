@@ -2,11 +2,13 @@
 
 This Project used data from
 the <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">Samsung Galaxy S smartphone</a>. 
-In this project, we have the following:
+Here is the source data sets of this project:
+<a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">HAR Data</a>.
 
-* <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">NewHARDataSet data</a>
+We have prepared R script to produce new data set under the following consideration:
+* <b>New Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">NewHARDataSet data</a>
 
-* <b>Description</b>: We should create one R script called run_analysis.R that does the following:
+* <b>Actions</b>: R script which I made called run_analysis.R that does the following:
 
 <ol>
 <li>Merges the training and the test sets to create one data set.</li>
@@ -18,9 +20,11 @@ In this project, we have the following:
 
 ## Loading the data
 
-When loading the dataset into R, please consider the following:
-
+After loading the source dataset into R, I considered the following:
+* The train set contains 7352 rows and 561 columns, and test set contains 2947 rows and 561 columns.
+* Before combine train and test sets (use rbind), I have joined train set with it's Subject and Activity data (use cbind); test set, too.
+* The variable names of the new combined data set exist in 'feature.txt' in the source data set.
+* I extracted all the columns which contain 'mean' or 'std' using 'grepl' function.
+* I used 'transform' function to transfer the values of Activity from interger to factor (labels).
+* I used dpylr::group_by function to create new data set 'NewHARDataSet' grouped by 'Subject' and 'Activity', and get the average of all variable for each of them.
 * The NewHARDataSet set has 180 rows 8 columns.
-
-* The values of all observation (except first two columns) are the average values of the original data sets for each Subject and Activity.
-
